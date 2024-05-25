@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express"
-import { DatabaseConnectionError, RequestValidationError, CustomError } from "../errors";
 import HttpStatusCodes from "../utils/status-codes";
+import CustomError from "../errors/custom-error";
 
 
 const errorHandler = (err: Error, req: Request, res: Response, next: NextFunction) => {
